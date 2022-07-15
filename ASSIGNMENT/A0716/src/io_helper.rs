@@ -1,5 +1,4 @@
-use std::io;
-use std::io::prelude::*;
+use std::io::{self, prelude::*};
 
 pub fn get_str_input(req: &str) -> String {
     println!("{}", req);

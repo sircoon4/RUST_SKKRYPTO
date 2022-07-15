@@ -6,7 +6,7 @@ use rand::Rng;
 
 fn main() {
     let valid_user = [
-        User::new("sircoon", 5000),
+        User::new("sircoon", rand::thread_rng().gen_range(1..=10000)),
         User::new("test", 76),
         User::new("admin", 9999),
     ];
