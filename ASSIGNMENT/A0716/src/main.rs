@@ -5,7 +5,7 @@ use objects::user::User;
 use rand::Rng;
 
 fn main() {
-    let valid_user = [
+    let valid_users = [
         User::new("sircoon", rand::thread_rng().gen_range(1..=10000)),
         User::new("test", 76),
         User::new("admin", 9999),
@@ -13,7 +13,7 @@ fn main() {
 
     let username = io_helper::get_str_input("Enter your username.");
 
-    let mut user = User::new("", 0);
+    let mut currentUser = User::new("", 0);
 
     for el in valid_user {
         //if username.eq(&el.username) {
